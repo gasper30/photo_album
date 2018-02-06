@@ -8,6 +8,29 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<header>
+    <div class="nav">
+      <div class="container">
+        <div class="row">
+          <div id="logo" class="pull-left">
+            <%= link_to root_url do %>
+            <%= image_tag ('download.png'), class: 'img-responsive' %>
+            <% end %>
+          </div>
+          <div class="ftn pull-right">
+            <%= link_to '新增相片', new_photo_path, class: 'add-photo' %>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+  </header>
+
+
+
+
   <body>
     <%= yield %>
   </body>
