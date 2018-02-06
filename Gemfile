@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.20.0'
 end
 
 
@@ -62,5 +62,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
 
-gem 'sass-rails', '~> 5.0' 
+
 gem 'bootstrap-sass', '~> 3.3.6'
